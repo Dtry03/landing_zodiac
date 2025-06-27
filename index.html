@@ -11,8 +11,203 @@
      <link rel="stylesheet" href="style.css">
 </head>
 <body class="antialiased">
-    <div class="min-h-screen flex items-center justify-center">
-        <h1 class="text-4xl font-bold text-purple-600">¡Web en construcción!</h1>
-    </div>
+    <header class="py-5 fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items center">
+            <a href="" class="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon-medium text-brand-red">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-10v-4H9v4H7v2h2v4h2v-4h2v-2h-2z"/>
+                </svg>
+                <span class="text-2xl font-bold text-white">Zodiac</span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#problema-solucion" class="text-white hover:text-brand-red transition duration-300 uppercase font-semibold">Problema & Solución</a>
+
+                <a href="#beneficios"  class="text-white hover:text-brand-red transition duration-300 uppercase font-semibold">Beneficios</a>
+
+                <a href="#caracteristicas"  class="text-white hover:text-brand-red transition duration-300 uppercase font-semibold">Características</a>
+     
+                <a href="#contacto" class="bg-brand-red hover:bg-brand-red-hover text-white font-semibold py-2.5 px-5 rounded-full text-sm transition duration-300 ease-in-out shadow-xl ml-4 transform hover:scale-105 uppercase font-semibold"> 
+                    Solicitar Demo
+                </a>
+            </nav>
+
+
+            <button class="md:hidden text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section id="hero" class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+
+            <video autoplay loop muted playsinline class="absolute z-0 w-auto min-w-full min-h-full max-w-none">
+                <source src="assets/videos/0626.mp4" type="video/mp4">
+            </video>
+
+            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-65 z-10"></div>
+
+            <div class="relative z-20 px-6">
+
+
+                <h1 class="fade-in-item text-3xl opacity-0 md:text-6xl font-bold text-lighter-gray leading-tight mb-4 translate-y-5 transition-all duration-1000 ease-in-out delay-200">
+                    La evolución de tu gimnasio empieza aquí.
+                </h1>
+
+                <p class="fade-in-item opacity-0 text-lg md:text-xl max-w-3xl mx-auto text-light-gray mb-8 translate-y-5 transition-all duration-1000 ease-in-out delay-200"> Simplifica por completo tu gestión y ofrece una experiencia digital que fortalece la conexión con tus socios.</p>
+
+                <a href="#demo" class="fade-in-item opacity-0 bg-brand-red hover:bg-brand-red-hover text-white font-bold py-3 px-8 rounded-lg text-lg   inline-block translate-y-5 transition-all duration-1000 ease-in-out delay-200">Auditoría Gratuita</a>
+            </div>
+
+        </section>
+
+        <section id="problema-solucion" class="py-20 bg-neutral-black-custom">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="fade-in-item opacity-0 text-3xl md:text-4xl font-bold text-lighter-gray mb-4 uppercase translate-y-5 transition-all duration-1000 ease-in-out delay-200">
+                    Una gestión complicada te cuesta tiempo y clientes
+                </h2>
+                <p class="fade-in-item opacity-0 text-lighter-gray mb-16 max-w-3xl mx-auto translate-y-5 transition-all duration-1000 ease-in-out delay-200">
+                    Dejar atrás las herramientas anticuadas no es solo modernizarse, es recuperar el control de tu negocio.
+                </p>
+
+                <div class="fade-in-item opacity-0 grid md:grid-cols-2 gap-12 text-left translate-y-5 transition-all duration-1000 ease-in-out delay-200">
+                    <div class="bg-dark-gray p-8 rounded-lg  border-neutral-medium-gray transition-all duration-300 transform hover:scale-105 hover:border-brand-red">
+                        <h3 class="text-2xl font-bold text-white mb-6 uppercase">¿Te suena familiar?</h3>
+                        <ul>
+                            <li class="flex items-start mb-8">
+                                <svg class="w-7 h-7 text-brand-red mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <div>
+                                    <h4 class="font-bold text-white text-lg">Reservas caóticas</h4>
+                                    <p class="text-light-gray">Un lío de mensajes de WhatsApp, llamadas y listas en papel que provocan overbooking y errores manuales.</p>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start mb-8">
+                                <svg class="w-7 h-7 text-brand-red mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <div>
+                                    <h4 class="font-bold text-white text-lg">Clases con huecos libres</h4>
+                                    <p class="text-light-gray">Poca visibilidad de las plazas disponibles que se traduce en clases vacias.</p>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start mb-8">
+                                <svg class="w-7 h-7 text-brand-red mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <div>
+                                    <h4 class="font-bold text-white text-lg">Carga administrativa</h4>
+                                    <p class="text-light-gray">Horas y horas dedicadas a organizar horarios, y confirmar asistencias.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-dark-gray p-8 rounded-lg  border-neutral-medium-gray transition-all duration-300 transform hover:scale-105 hover:border-brand-red">
+                        <h3 class="text-2xl font-bold text-white mb-6 uppercase">Zodiac lo simplifica todo</h3>
+                        <ul>
+                            <li class="flex items-start mb-8">
+                                <svg class="w-7 h-7 text-success-green mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <div>
+                                    <h4 class="font-bold text-white text-lg">Sistema de reservas centralizado</h4>
+                                    <p class="text-light-gray">Tus socios reservan online 24/7, sin errores y sin que tengas que intervenir.</p>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start mb-8">
+                                <svg class="w-7 h-7 text-success-green mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <div>
+                                    <h4 class="font-bold text-white text-lg">Optimización de clases</h4>
+                                    <p class="text-light-gray">Gestión automática de listas de clase y de espera para maximizar la asistencia a cada sesión.</p>
+                                </div>
+                            </li>
+
+                            <li class="flex items-start mb-8">
+                                <svg class="w-7 h-7 text-success-green mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <div>
+                                    <h4 class="font-bold text-white text-lg">Automatización inteligente</h4>
+                                    <p class="text-light-gray">El sistema se encarga de las tareas repetitivas para que tu equipo se centre en los socios.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="beneficios" class="py-20 relative bg-cover bg-fixed" style="background-image: url('assets/images/yoga.png')">
+            <div class="absolute inset-0 bg-black opacity-65"></div>
+            <div class="container relative inset-1 mx-auto px-6 text-center">
+                <h2 class="fade-in-item opacity-0 text-3xl md:text-4xl font-bold text-lighter-gray mb-16 uppercase translate-y-5 transition-all duration-1000 ease-in-out px-4">Diseñado para transformar tu gimnasio</h2>
+            
+            <div class="grid md:grid-cols-3 gap-10 text-center lg:px-40">
+                <div class="target fade-in-item opacity-0 translate-y-5 transition-all duration-1000 ease-in-out px-4 ">
+                        <div class="bg-dark-gray w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center  border-neutral-medium-gray">
+                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-brand-red"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 uppercase">Recupera tu tiempo</h3>
+                        <p class="text-light-gray">
+                            Deja que Zodiac se encargue de las tareas repetitivas. Dedica tus horas a lo que de verdad importa: mejorar la experiencia de tus socios.
+                        </p>
+                </div>
+                <div class="target fade-in-item opacity-0 translate-y-5 transition-all duration-1000 ease-in-out px-4">
+                        <div class="bg-dark-gray w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center  border-neutral-medium-gray">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-brand-red"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 uppercase">Optimiza tus clases</h3>
+                        <p class="text-light-gray">
+                             Asegura que cada sesión esté al máximo de su capacidad. Con listas de espera automáticas, no volverás a tener huecos por cancelaciones de última hora.
+                        </p>
+                </div>
+                <div class="target fade-in-item opacity-0 translate-y-5 transition-all duration-1000 ease-in-out px-4">
+                        <div class="bg-dark-gray w-20 h-20 rounded-full mx-auto mb-6 flex items-center justify-center  border-neutral-medium-gray">
+                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-brand-red"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 uppercase">Una experiencia inmejorable</h3>
+                        <p class="text-light-gray">
+                             Una app intuitiva para reservar en segundos no solo les da comodidad, sino que fortalece su compromiso y lealtad con tu gimnasio.
+                        </p>
+                </div>
+                
+            </div>
+            </div>
+        </section>
+    </main>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+            setTimeout(() => {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.remove('opacity-0', 'translate-y-5');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    threshold: 0.1
+                });
+
+                document.querySelectorAll('.fade-in-item').forEach(item => {
+                    observer.observe(item);
+                });
+            }, 50); 
+        });
+
+        const header = document.querySelector('header');
+        const scrollTrigger = 50; 
+
+        const handleScroll = () => {
+            if (window.scrollY > scrollTrigger) {
+               
+                header.classList.add('bg-dark-gray');
+            } else {
+               
+                    header.classList.remove('bg-dark-gray');
+            }
+        };
+            
+    
+        window.addEventListener('scroll', handleScroll);
+    </script>
 </body>
 </html>
